@@ -3,4 +3,10 @@
 set -e
 
 lb config noauto \
+	--mode debian \
+	--architectures i386 \
+	--debian-installer false \
+	--archive-areas "main contrib" \
+	--apt-indices false \
+	--memtest none \
 	"${@}"
