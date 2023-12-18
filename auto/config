@@ -5,8 +5,8 @@ set -e
 lb config noauto \
 	--mode debian \
 	--architectures i386 \
-	--debian-installer false \
-	--archive-areas "main contrib" \
+	--debian-installer none \
+	--archive-areas "main contrib non-free-firmware non-free" \
 	--apt-indices false \
 	--memtest none \
 	"${@}"
