@@ -1,0 +1,10 @@
+# Section: display manager
+lightdm
+lightdm-gtk-greeter
+light-locker
+xfce4
+
+# Section: boot screen
+plymouth
+plymouth-x11
+plymouth-themes
