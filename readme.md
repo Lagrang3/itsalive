@@ -5,6 +5,11 @@ $ lb config
 # lb build
 ```
 
+After the build copy the image to the usb key:
+```
+# dd if=live-image.iso of=/dev/sdb bs=4M status=progress conv=fdatasync
+```
+
 # Config
 
 To configure a live build you would typically call
