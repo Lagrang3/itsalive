@@ -12,10 +12,15 @@ $ lb config
 # lb build
 ```
 
-After the build copy the image to the usb key:
+After the build copy the image to the usb key.
+WARNING! I use `dd` to write directly into the usb device with following
+command
 ```
-# dd if=live-image.iso of=/dev/sdb bs=4M status=progress conv=fdatasync
+# dd if=live-image.iso of=/dev/<your usb device> bs=4M status=progress conv=fdatasync
 ```
+The path to the usb device could be `/dev/sda`, `/dev/sdb`, `/dev/sdc`, etc, depending on
+your system. Be careful not to write to the wrong disk or you may lose your
+data.
 
 # Config
 
