@@ -1,3 +1,10 @@
+# What is this?
+
+This is a debian live image creator with the purpose to run on an offline
+computer to create and double-check Bitcoin seed generation.
+The image is built for wide compatibility, i.e. aimed to run in 
+i386 and amd64 architechtures.
+
 # Quickstart
 
 ```
