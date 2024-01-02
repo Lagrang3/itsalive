@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+cd /opt
+git clone https://github.com/Lagrang3/hackbitcoin
+cd /opt/hackbitcoin
+python3 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt
+pip install .
+echo "#!"$(which python) > /home/user/Desktop/dice.py && cat examples/dice.py >> /home/user/desktop/dice.py
+deactivate
