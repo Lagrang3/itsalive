@@ -17,3 +17,7 @@ python3-dns
 
 # Section: hackbitcoin
 python3-venv
+## to show qrcodes
+libjpeg-dev 
+zlib1g-dev
+imagemagick
