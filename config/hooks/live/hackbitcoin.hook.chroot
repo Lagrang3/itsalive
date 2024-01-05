@@ -2,7 +2,6 @@
 
 set -e
 
-export DICEEXE=/home/user/Desktop/dice.py
 
 cd /opt
 git clone https://github.com/Lagrang3/hackbitcoin
@@ -11,6 +10,13 @@ python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
 pip install .
+
+export DICEEXE=/home/user/Desktop/dice.py
 echo "#!"$(which python) > $DICEEXE && cat examples/dice.py >> $DICEEXE
-deactivate
 chmod +x $DICEEXE
+
+export CHILDEXEC=/home/user/Desktop/child.py
+echo "#!"$(which python) > $CHILDEXEC && cat examples/child.py >> $CHILDEXEC
+chmod +x $CHILDEXEC
+
+deactivate
