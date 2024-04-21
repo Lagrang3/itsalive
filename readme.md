@@ -7,6 +7,11 @@ i386 and amd64 architechtures.
 
 # Quickstart
 
+Install requirements
+```
+# apt-get install live-build
+```
+
 ```
 $ lb config
 # lb build
