@@ -19,4 +19,8 @@ export CHILDEXEC=/home/user/Desktop/child.py
 echo "#!"$(which python) > $CHILDEXEC && cat examples/child.py >> $CHILDEXEC
 chmod +x $CHILDEXEC
 
+export ADDREXEC=/home/user/Desktop/addresses.py
+echo "#!"$(which python) > $ADDREXEC && cat examples/addresses.py >> $ADDREXEC
+chmod +x $ADDREXEC
+
 deactivate
