@@ -53,3 +53,10 @@ Once configuration has been set-up then you can call.
 # References 
 [1] https://live-team.pages.debian.net/live-manual/html/live-manual/managing-a-configuration.en.html
 
+# FAQ
+
+Q. What is the default user and password?
+
+A. The default user is "user" and password is "live".
+The default user has sudo access and can set the root password
+by issuing `sudo passwd root`.
