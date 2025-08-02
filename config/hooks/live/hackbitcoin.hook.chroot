@@ -27,4 +27,9 @@ export ADDREXEC=/home/user/Desktop/seedqr.py
 echo "#!"$(which python) > $ADDREXEC && cat examples/seedqr.py >> $ADDREXEC
 chmod +x $ADDREXEC
 
+# A tool to generate deterministic entropy from a seed passphrase
+export ADDREXEC=/home/user/Desktop/entropy.py
+echo "#!"$(which python) > $ADDREXEC && cat examples/entropy.py >> $ADDREXEC
+chmod +x $ADDREXEC
+
 deactivate
