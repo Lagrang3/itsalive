@@ -4,6 +4,7 @@ set -e
 
 lb config noauto \
 	--mode debian \
+        --distribution bullseye \
 	--architectures i386 \
 	--debian-installer none \
 	--archive-areas "main contrib non-free-firmware non-free" \
